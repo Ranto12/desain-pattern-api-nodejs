@@ -60,7 +60,7 @@ app.use((err,req, res, next)=>{
 
 mongoose.connect('mongodb+srv://Ranto21:Sayabutawarna1@cluster0.aetsm7d.mongodb.net/designpattern?retryWrites=true&w=majority')
 .then(()=>{
-    app.listen(4000, ()=> console.log("connection succes"))
+    app.listen(PORT, ()=> console.log("connection succes"))
 })
 .catch(err => console.log(err))
 
